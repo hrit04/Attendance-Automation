@@ -1,8 +1,4 @@
-# Modified by Augmented Startups & Geeky Bee
-# October 2020
-# Facial Recognition Attendence GUI
-# Full Course - https://augmentedstartups.info/yolov4release
-# *-
+
 from PyQt5.QtGui import QImage, QPixmap
 from PyQt5.uic import loadUi
 from PyQt5.QtCore import pyqtSlot, QTimer, QDate, Qt
@@ -18,7 +14,7 @@ from PIL import ImageGrab
 class Ui_OutputDialog(QDialog):
     def __init__(self):
         super(Ui_OutputDialog, self).__init__()
-        loadUi("./outputwindow.ui", self)
+        loadUi("./second_screen.ui", self)
 
         #Update time
         now = QDate.currentDate()

@@ -6,13 +6,13 @@ from PyQt5.QtCore import pyqtSlot
 from PyQt5.QtWidgets import QApplication, QDialog
 import resource
 # from model import Model
-from out_window import Ui_OutputDialog
+from next import Ui_OutputDialog
 
 
 class Ui_Dialog(QDialog):
     def __init__(self):
         super(Ui_Dialog, self).__init__()
-        loadUi("mainwindow.ui", self)
+        loadUi("firstscreen.ui", self)
 
         self.runButton.clicked.connect(self.runSlot)
 
@@ -38,7 +38,7 @@ class Ui_Dialog(QDialog):
 
     def outputWindow_(self):
         """
-        Created new window for vidual output of the video in GUI
+        Created new window for visual output of the video in GUI
         """
         self._new_window = Ui_OutputDialog()
         self._new_window.show()
